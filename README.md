@@ -42,7 +42,7 @@ coupon-generator/
 
 ## 🌐 Live Demo
 
-[Try the Coupon Generator](https://your-username.github.io/coupon-generator/)
+[Try the Coupon Generator]([https://your-username.github.io/coupon-generator/](https://niajmahmud.github.io/Coupon-Generator-/))
 
 ## 💡 Future Improvements
 

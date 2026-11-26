@@ -31,7 +31,7 @@ console.log(descriptionInput.value);
 
 if(!validityInput.disabled){
     console.log(validityInput.value);
-    cpndate.textContent = validityInput.value; 
+    cpndate.textContent = "valid till: " + validityInput.value;
     
 }else{
     console.log("Forever"); 

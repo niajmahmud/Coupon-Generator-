@@ -179,6 +179,10 @@ form button:hover {
     text-align: center;
     margin-bottom: 25px;
 }
+.coupon-validity {
+  text-anchor: middle;
+  font-size: 16px;
+}
 
 #pageTitle h1 {
     color: #8E315B;

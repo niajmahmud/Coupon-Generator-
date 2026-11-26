@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%25%22 y=%2250%25%22 font-size=%2275%22 text-anchor=%22middle%22 dominant-baseline=%22central%22>💌</text></svg>">
+    
+
+
+</head>
+
+<body>
+<div id="pageTitle">
+    <h1>Coupon Generator</h1>
+</div>
+    
+    <div class="container">
+
+        <form>
+            <p>Coupon Name: </p>
+            <input type="text" id="nameIn">
+            <p>Coupon description: </p>
+            <input maxlength="60" type="text" id="description">
+            <p id="charCount">0 / 100 characters</p>
+            <p>validity: </p>
+            <div class="date-container">
+                <input type="date" id="validity">
+                <button type="button" id="foreverBtn">Forever</button>
+            </div>
+            <div class="button-container">
+                <button id="genbtn">generate</button>
+                <button type="button" id="sendCoupon" style="display: none;">
+                    Send Coupon
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+    <div>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300" id="coupon"
+            class="coupon">
+
+            <!-- Main coupon shape with side cutouts -->
+            <path id="couponBackground" class="coupon-background" d="
+            M 25 0
+            H 475
+            Q 500 0 500 25
+            V 120
+            A 30 30 0 0 0 500 180
+            V 275
+            Q 500 300 475 300
+            H 25
+            Q 0 300 0 275
+            V 180
+            A 30 30 0 0 0 0 120
+            V 25
+            Q 0 0 25 0
+            Z
+        " />
+
+            <!-- Inner decorative border -->
+            <rect id="couponBorder" class="coupon-border" x="15" y="15" width="470" height="270" rx="15" />
+
+            <!-- Title -->
+            <text id="couponTitle" class="coupon-title" x="250" y="90">Title</text>
+
+            <!-- Description -->
+            <text id="couponDescription" class="coupon-description" x="250" y="155">description</text>
+
+            <!-- Validity -->
+            <text id="couponValidity" class="coupon-validity" x="270" y="225"></text>
+            <text id="couponValidity" class="coupon-validity" x="200" y="225">valid till: </text>
+
+        </svg>
+
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
